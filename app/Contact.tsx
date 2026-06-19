@@ -33,7 +33,7 @@ export default function Contact() {
 
             <div className="mt-10 space-y-5">
               <Link
-                href="mailto:your.email@example.com"
+                href="mailto:shaunmisquitta75@gmail.com"
                 className="flex items-center gap-4 rounded-2xl border border-zinc-200 p-5 transition hover:border-purple-300 hover:bg-purple-50"
               >
                 <Mail className="h-5 w-5 text-purple-600" />
@@ -41,21 +41,21 @@ export default function Contact() {
                 <div>
                   <p className="text-sm text-zinc-500">Email</p>
                   <p className="font-semibold text-zinc-900">
-                    your.email@example.com
+                    shaunmisquitta75@gmail.com
                   </p>
                 </div>
               </Link>
 
               <Link
-                href="tel:+919999999999"
+                href="tel:+917021409568"
                 className="flex items-center gap-4 rounded-2xl border border-zinc-200 p-5 transition hover:border-purple-300 hover:bg-purple-50"
               >
                 <Phone className="h-5 w-5 text-purple-600" />
 
                 <div>
-                  <p className="text-sm text-zinc-500">Phone</p>
+                  <p className="text-sm text-zinc-500">Mobile</p>
                   <p className="font-semibold text-zinc-900">
-                    +91 99999 99999
+                    +91 7021409568
                   </p>
                 </div>
               </Link>
@@ -114,7 +114,7 @@ export default function Contact() {
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <p className="text-3xl font-extrabold text-white">
-                    4+
+                    5+
                   </p>
 
                   <p className="mt-2 text-sm text-zinc-400">
