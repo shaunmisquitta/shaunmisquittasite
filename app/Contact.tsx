@@ -155,7 +155,7 @@ export default function Contact() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/Shaun_Misquitta_Resume.pdf"
+                  href="/resume_2026.pdf"
                   target="_blank"
                   className="rounded-2xl bg-white px-6 py-4 text-center text-sm font-semibold text-zinc-900 transition hover:scale-[1.02]"
                 >
@@ -163,7 +163,7 @@ export default function Contact() {
                 </Link>
 
                 <Link
-                  href="/Shaun_Misquitta_Resume.pdf"
+                  href="/resume_2026.pdf"
                   download
                   className="rounded-2xl border border-zinc-600 px-6 py-4 text-center text-sm font-semibold text-white transition hover:border-purple-400"
                 >
@@ -173,7 +173,7 @@ export default function Contact() {
             </div>
 
             <Link
-              href="mailto:your.email@example.com"
+              href="mailto:shaunmisquitta75@gmail.com"
               className="mt-8 inline-flex w-fit items-center gap-2 rounded-2xl bg-purple-600 px-6 py-4 font-semibold text-white transition hover:bg-purple-700 hover:gap-3"
             >
               Get In Touch

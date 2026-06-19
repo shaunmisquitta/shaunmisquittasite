@@ -59,7 +59,7 @@ const experience = [
   },
   {
     company: "HyperFabs",
-    duration: "Jan 2024 — Dec 2024",
+    duration: "Jan 2020 — Dec 2021",
     role: "Founder & Developer",
     achievements: [
       <>
