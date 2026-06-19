@@ -34,10 +34,10 @@ function NavBar() {
           </a>
 
           <a
-            href="#about"
+            href="#experience"
             className="text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-900"
           >
-            About
+            Experience
           </a>
 
           <a

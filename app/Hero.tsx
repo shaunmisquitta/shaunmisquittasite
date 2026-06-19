@@ -1,10 +1,56 @@
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
+import {
+  FaReact,
+  FaNodeJs,
+  FaSwift,
+} from "react-icons/fa";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiKotlin,
+  SiNextdotjs,
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+
+const technologies = [
+  {
+    name: "React",
+    icon: FaReact,
+  },
+  {
+    name: "React Native",
+    icon: TbBrandReactNative,
+  },
+  {
+    name: "JavaScript",
+    icon: SiJavascript,
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
+    name: "Next.js",
+    icon: SiNextdotjs,
+  },
+  {
+    name: "Node.js",
+    icon: FaNodeJs,
+  },
+  {
+    name: "Swift",
+    icon: FaSwift,
+  },
+  {
+    name: "Kotlin",
+    icon: SiKotlin,
+  },
+];
 
 export default function Hero() {
   return (
-    <section className="relative mx-auto flex max-w-7xl min-h-screen flex-col items-center justify-between gap-8 px-8 py-24 pr-12 lg:flex-row lg:py-24">
-      {/* Left */}
+<section className="relative mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-between gap-8 px-8 pt-36 pb-24 lg:flex-row lg:py-24">      {/* Left */}
       <div className="max-w-xl">
         <p className="mb-4 text-3xl font-bold text-zinc-800">
           Hey, I'm Shaun 👋🏻
@@ -25,14 +71,47 @@ export default function Hero() {
           scalable mobile apps and web experiences that users genuinely love.
         </p>
 
+        {/* CTA Buttons */}
         <div className="mt-10 flex flex-wrap gap-5">
-          <button className="rounded-xl bg-zinc-900 px-7 py-4 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+          <a
+            href="#contact"
+            className="rounded-xl bg-zinc-900 px-7 py-4 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
+          >
             Get In Touch
-          </button>
+          </a>
 
-          <button className="rounded-xl border border-zinc-200 bg-white px-7 py-4 text-sm font-semibold text-zinc-900 shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+          <a
+            href="#projects"
+            className="rounded-xl border border-zinc-200 bg-white px-7 py-4 text-sm font-semibold text-zinc-900 shadow-md transition hover:-translate-y-1 hover:shadow-lg"
+          >
             Browse Projects
-          </button>
+          </a>
+        </div>
+
+        {/* Tech Stack */}
+        <div className="mt-12">
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.15em] text-zinc-400">
+            Tech I Work With
+          </p>
+
+          <div className="flex flex-wrap gap-3">
+            {technologies.map((tech) => {
+              const Icon = tech.icon;
+
+              return (
+                <div
+                  key={tech.name}
+                  className="group flex items-center gap-3 rounded-2xl border border-zinc-200 bg-white px-4 py-3 shadow-sm transition hover:-translate-y-1 hover:border-purple-300 hover:shadow-md"
+                >
+                  <Icon className="h-5 w-5 text-zinc-700 transition group-hover:text-purple-600" />
+
+                  <span className="text-sm font-medium text-zinc-700 transition group-hover:text-zinc-900">
+                    {tech.name}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 

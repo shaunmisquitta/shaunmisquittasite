@@ -1,16 +1,33 @@
-import React from 'react'
-import Image from "next/image";
+import React from "react";
+
 const experience = [
   {
     company: "Feedspot",
     duration: "Dec 2023 — Present",
     role: "React Native Developer → Lead React Native Developer",
     achievements: [
-      "Promoted to Lead React Native Developer within one year.",
-      "Built and scaled Feedspot Reader for iOS and Android from the ground up.",
-      "Implemented in-app purchases and native modules using Swift and Kotlin.",
-      "Mentored junior developers and drove engineering best practices.",
-      "Optimized performance and delivered engagement-focused features for 1M+ users.",
+      <>
+        Promoted to <strong>Lead React Native Developer</strong> within one
+        year.
+      </>,
+      <>
+        Built and scaled <strong>Feedspot Reader</strong> for{" "}
+        <strong>iOS and Android</strong> from the ground up.
+      </>,
+      <>
+        Implemented <strong>in-app purchases</strong> and{" "}
+        <strong>native modules</strong> using <strong>Swift</strong> and{" "}
+        <strong>Kotlin</strong>.
+      </>,
+      <>
+        Mentored <strong>junior developers</strong> and drove{" "}
+        <strong>engineering best practices</strong>.
+      </>,
+      <>
+        Optimized <strong>performance</strong> and delivered{" "}
+        <strong>engagement-focused features</strong> for{" "}
+        <strong>1M+ users</strong>.
+      </>,
     ],
   },
   {
@@ -18,11 +35,26 @@ const experience = [
     duration: "Nov 2021 — Nov 2023",
     role: "Junior Full Stack Developer → Senior Full Stack Developer",
     achievements: [
-      "Built the Brainheaters mobile app from scratch using React Native and Node.js.",
-      "Scaled the platform to 70,000+ students across India.",
-      "Conducted 100+ technical interviews and mentored junior developers.",
-      "Led product initiatives and developed analytics systems for data-driven decisions.",
-      "Collaborated closely with stakeholders to ship high-impact features.",
+      <>
+        Built the <strong>Brainheaters mobile app</strong> from scratch using{" "}
+        <strong>React Native</strong> and <strong>Node.js</strong>.
+      </>,
+      <>
+        Scaled the platform to <strong>70,000+ students</strong> across India.
+      </>,
+      <>
+        Conducted <strong>100+ technical interviews</strong> and mentored{" "}
+        <strong>junior developers</strong>.
+      </>,
+      <>
+        Led <strong>product initiatives</strong> and developed{" "}
+        <strong>analytics systems</strong> for{" "}
+        <strong>data-driven decisions</strong>.
+      </>,
+      <>
+        Collaborated closely with <strong>stakeholders</strong> to ship{" "}
+        <strong>high-impact features</strong>.
+      </>,
     ],
   },
   {
@@ -30,62 +62,87 @@ const experience = [
     duration: "Jan 2024 — Dec 2024",
     role: "Founder & Developer",
     achievements: [
-      "Founded and engineered an online manufacturing platform.",
-      "Built instant quoting, CAD visualization, and automated workflows.",
-      "Delivered laser cutting, CNC, and 3D printing solutions across India.",
-      "Managed both product development and business operations.",
+      <>
+        Founded and engineered an{" "}
+        <strong>online manufacturing platform</strong>.
+      </>,
+      <>
+        Built <strong>instant quoting</strong>,{" "}
+        <strong>CAD visualization</strong>, and{" "}
+        <strong>automated workflows</strong>.
+      </>,
+      <>
+        Delivered <strong>laser cutting</strong>, <strong>CNC</strong>, and{" "}
+        <strong>3D printing solutions</strong> across India.
+      </>,
+      <>
+        Managed both <strong>product development</strong> and{" "}
+        <strong>business operations</strong>.
+      </>,
     ],
   },
 ];
-function Experience() {
 
+function Experience() {
   return (
-  <section
-      id="projects"
-      className="mx-auto max-w-7xl px-8 py-5"
+    <section
+      id="experience"
+      className="mx-auto max-w-7xl px-8 py-20 scroll-mt-32"
     >
-   
-      {/* Experience */}
-      <div className="mt-10">
+      <div>
         <p className="mb-1 text-sm font-semibold uppercase tracking-[0.2em] text-purple-600">
           5+ Years
         </p>
 
-        <h3 className="text-4xl font-bold tracking-tight text-zinc-900">
+        <h2 className="text-5xl font-extrabold tracking-tight text-zinc-900 md:text-6xl">
           Experience
-        </h3>
+        </h2>
 
-     <div className="mt-12 space-y-12 border-l border-zinc-200 pl-8">
-  {experience.map((job) => (
-    <div key={job.company} className="relative">
-      <div className="absolute -left-[41px] top-0.5 h-4 w-4 rounded-full bg-purple-600" />
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-500">
+          Building mobile products, leading teams, and shipping software used
+          by millions of users.
+        </p>
 
-      <p className="text-sm font-semibold uppercase tracking-[0.15em] text-purple-600">
-        {job.duration}
-      </p>
+        <div className="mt-14 border-l border-zinc-200 pl-8 space-y-14">
+          {experience.map((job) => (
+            <div key={job.company} className="relative">
+              {/* Timeline Dot */}
+              <div className="absolute -left-[41px] top-1 h-4 w-4 rounded-full bg-purple-600" />
 
-      <h4 className="mt-2 text-2xl font-bold text-zinc-900">
-        {job.company}
-      </h4>
+              {/* Duration */}
+              <p className="text-sm font-semibold uppercase tracking-[0.15em] text-purple-600">
+                {job.duration}
+              </p>
 
-      <p className="mt-1 font-medium text-zinc-700">
-        {job.role}
-      </p>
+              {/* Company */}
+              <h3 className="mt-2 text-3xl font-bold text-zinc-900">
+                {job.company}
+              </h3>
 
-      <ul className="mt-5 max-w-3xl space-y-3 text-zinc-700">
-        {job.achievements.map((item) => (
-          <li key={item} className="flex gap-3 leading-relaxed">
-            <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-purple-600" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  ))}
-</div>
+              {/* Role */}
+              <p className="mt-2 text-lg font-medium text-zinc-700">
+                {job.role}
+              </p>
+
+              {/* Achievements */}
+              <ul className="mt-6 max-w-3xl space-y-4 text-zinc-700">
+                {job.achievements.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex gap-3 leading-relaxed [&_strong]:font-semibold [&_strong]:text-zinc-900"
+                  >
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-purple-600" />
+
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Experience
+export default Experience;

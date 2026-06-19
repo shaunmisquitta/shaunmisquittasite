@@ -3,6 +3,8 @@ import Hero from "./Hero";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import ResumeCTA from "./Resume";
+import Contact from "./Contact";
 
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
           <Hero/>
           <Projects/>
           <Experience/>
+
+          <Contact/>
         </main>
     </div>
   );
